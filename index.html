@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>MBU Online Elections</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🗳 Mohan Babu University Elections</h1>
+    <p><strong>Login using your MBU email ID (<code>@mbu.asia</code>)</strong></p>
+    
+    <input type="email" id="email" placeholder="Enter your MBU Email ID" />
+    <button onclick="login()">Login</button>
+
+    <div id="votingSection" style="display: none;">
+      <h2>Select Your Candidate</h2>
+      <div class="candidate" onclick="vote('K R YOGESH')">🇮🇳 K R YOGESH (CSE-A7)</div>
+      <div class="candidate" onclick="vote('C ANJI')">🚩 C ANJI (CSE-A9)</div>
+      <div class="candidate" onclick="vote('B SWAROOP')">🤖 B SWAROOP (AI & ML)</div>
+      <div class="candidate" onclick="vote('V SUNIL')">📡 V SUNIL (ECE)</div>
+      <div class="candidate" onclick="vote('G HARI')">🏗 G HARI (CIVIL)</div>
+
+      <p id="voteMessage"></p>
+
+      <h3>Live Vote Count</h3>
+      <ul id="voteCount"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
